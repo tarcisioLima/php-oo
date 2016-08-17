@@ -1,0 +1,5 @@
+Relacionamento entre classes 
+Has-A: uma classe 'A' tem um 'B', quando uma classe possui alguma referencia de B. ou seja: agregação ou composição.
+
+Injeção de dependencia via construtor: quando passa o objeto pelo construtor.
+Type Hint: em php vc explicita o tipo de objeto q deve ser passado.
