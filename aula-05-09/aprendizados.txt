@@ -1,0 +1,26 @@
+05/09/2016
+
+public    -> todas as classes possuem acesso a um membro público.
+private   -> apenas a própria classe possui acesso.
+protected -> acesso liberado para todas as subclasses.
+
+acesso:
+a) escrita: atribuição
+    $obj->atr=5;
+b) leitura: argumento, uso em expressão.
+    echo $obj->atr;
+         $a = $obj->atr;
+
+OBS: atributos privados não são herdaveis.
+     private atributes aren't inheritable. CUIDADO AO USAR SET!!!
+     
+Getters and Setters
+
+É um método para liberar acesso de leitura a um atributo.
+OBS: Geralmente getters e setters aumentam o acoplamento da aplicação, então cuidado ao usa-lo.
+
+Sobreescrita
+ quando é usado o mesmo nome de método nas classes filhas.
+ Ou overhide: quando há o uso do mesmo nome de método entre classes relacionadas por herança. 
+ O método da super classe tem seu comportamento escondido pelo método de mesmo nome da subclasse.
+ O PHP só notará isso em tempo de execução. (dinamic dispach)
