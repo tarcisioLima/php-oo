@@ -1,0 +1,41 @@
+#Model View Controller
+
+Padrão de projeto de software que visa separar uma interface com o usuário dos 
+dados.
+
+O padrão é dividido em 3 camadas:
+
+**Model (M):** camada que trata os dados. Representa o estado da aplicação. aqui há 
+rotinas de iteragir com o banco de dados.
+
+**View (V):** camada de apresentação. Aqui estão as paginas Html. esta camada pode observar
+mudanças de estado do model.
+
+**Controller (C):** responsavel por ler as requisições HTTP e a partir delas,
+delegar ações para View ou Model.
+
+
+CodeIgniter funcionar assim:
+
+https://php-tarcisiolima.c9users.io/index.php/<controller>/<metodo>]
+
+EXERCICIO COM A FRAMEWORK CODE IGNITER
+CRIE UM FORMULARIO PARA SOMAR DOIS NUMEROS.
+
+O ACESSO DEVE SER FEITO PELA URL
+
+app.com/index.php/math/formulario
+
+E A SOMA DEVER SER EFETUADA EM 
+
+app.index.php/math/soma
+
+
+# EXERCICIO: CRIE A TABELA CLIENTE EM SEU BANCO COM OS CAMPOS:
+Id, nome, idade, cpf.
+FAÇA UMA TELA DE CADASTRO DE CLIENTES ENCONTRADO PELA ROTA
+app.com/cliente/cadastro
+
+SUA INSERÇÃO AO BANCO DEVE OCORRER EM 
+app.com/cliente/inserir
+APÓS A INSERÇÃO, MOSTAR UMA PÁGINA DE SUCESSO MOSTRANDO O NOME INSERIDO

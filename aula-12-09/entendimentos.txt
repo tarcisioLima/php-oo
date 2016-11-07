@@ -1,0 +1,43 @@
+ABSTRAÇÃO
+Ato de esconder detalhes de implementação de classes usuárias.
+O foco é mostrar apenas o que o objeto sabe fazer (e não como fazer).
+Representa também uma generalização de comportamentos.
+esse conceito é obtido por dois meios.
+
+a) classes abstratas (pode possuir atributos e métodos concretos)
+b) interface (constantes + assinatura de métodos)
+
+OBS: 
+interface n tem atributo. 
+se ouver atributo e método concreto usar classe abstrata.
+Classes abstratas não podem ser instanciadas
+classes abstratas só pode ter um pai.
+
+MÉTODOS ABSTRATOS: é um método sem corpo de código (só existe pra ser sobreescrito).
+É obrigatório a implementação do metodo abstrato na classe concreta.
+
+Polimorfismo de subtipos: quando vc referencia uma objeto de várias formas. 
+por exemplo, No type hint se uma classe A abstrata for marcada como type hint, então é possivel passar as subclasses de A como 
+argumento.
+
+public function metodo(A $a){}
+NO TYPE-HINT, SE UMA CLASSE A (abstrata) FOR MARCADA COMO TYPE HINT, EXEMPLO,
+
+clas Foo{
+   public function metodo(A $a){
+
+   }
+}
+
+E B, C e D SAO SUBCLASSES DE A, ENTAO EH POSSIVEL FAZER O SEGUINTE:
+
+$foo = new Foo();
+$foo->metodo(new B);
+$foo->metodo(new C);
+$foo->metodo(new D);
+
+NAO EH PERMITIDO $foo->metodo(new A); POIS, A EH ABSTRATA
+
+
+Duck Typing: (Polimorfismo da linguagens de tipagem dinamica/fraca)
+"Se algo grasna como um pato, voa como um pato e nada como um pato, então esta coisa é um pato."

@@ -1,0 +1,32 @@
+- CONFIGURAÇÃO DO AMBIENTE PHPMYADMIN
+    mysql-ctl install
+    phpmyadmin-ctl install
+- INICIAÇÃO
+    mysql-ctl start
+- CRIANDO O HTACCESS
+    Rewriteengine On
+    RewriteRule ^([A-Za-z]+)/([A-Za-z]+)/?$ 10-10-16-Webservice/app/web.php?classe=$1&met=$2 [L]
+- CURLS
+    O parametro "-v" nos permite ver o header do response.
+    O "-X" nos permite inserir o metodo da requisição HTTP. Exemplo -X POST
+    O "-d" permite a criação de um json. Exemplo: -d '{"nome":"Anna"}'
+    
+Username: tarcisiolima
+https://php-tarcisiolima.c9users.io/phpmyadmin
+
+exemplo post:
+curl -H "Content-Type: application/json"
+"https://php-tarcisiolima.c9users.io/aula-10-10/web.php?classe=NomeResource&met=manipular" -X POST -d '{"nome": "ola marilene"}'  
+
+exemplo update (put)
+curl -H "Accept: application/json" 
+"https://php-tarcisiolima.c9users.io/aula-10-10/web.php?classe=NomeResource&met=manipular" 
+-X PUT -d '{"id": 3, "nome": "ATUALIZADO"}' 
+
+exemplo delete
+curl -H "Accept: application/json"
+"https://php-tarcisiolima.c9users.io/aula-10-10/web.php?classe=Nomeet=manipular" 
+-X DELETE -d '{"id": 3}'                 
+
+
+--n codeigniter link: https://www.codeigniter.com/

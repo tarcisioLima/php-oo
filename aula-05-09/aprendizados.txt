@@ -23,4 +23,4 @@ Sobreescrita
  quando é usado o mesmo nome de método nas classes filhas.
  Ou overhide: quando há o uso do mesmo nome de método entre classes relacionadas por herança. 
  O método da super classe tem seu comportamento escondido pelo método de mesmo nome da subclasse.
- O PHP só notará isso em tempo de execução. (dinamic dispach)
+ O PHP só notará isso em tempo de execução. (dinamic dispach).

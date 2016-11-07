@@ -1,0 +1,16 @@
+IsA, ou Herança:
+
+relação hierarquica entre classes. Uma classe A acima de de uma classe B é chamada de superclasse;
+enquanto B é chamada de subclasse.
+
+todos os membros (a menos de modifiador de acesso) de A são visiveis em B.
+Extends é a palavra chave para fazer herança entre classes.
+usa-se parent:: para acessar construtor da classe mãe.
+Ex:
+    class Bar extends Fool {
+        public function __construct($a){
+            parent::__construct($a);
+        }
+    }
+OBS: Search for Dealy Diamond of Death 
+       
