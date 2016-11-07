@@ -1,0 +1,20 @@
+Code Igniter não gosta de construtor: então é preciso criar outra função como 
+construtor.
+Code Igniter trata o objeto como container de dados. (Contradiz o paradigma)
+
+
+agoras usaremos a inserção de forma private, antes de usar o ORM
+passaremos para um array associativo antes de mandar para o banco
+para assim usar ele de forma publica.
+
+EXEERCICIO:
+
+1) Crie uma tabela disciplana, contendo os campos:
+Id, nome, descricao.
+
+- Crie uma rota para mostrar formulario
+- Crie o model com os atributos privados
+- Crie uma rota para inserção de disciplanas;
+
+A session é maneira da dar memoria pro metodo http pra salvar as informações, ele funciona
+no lado do servidor enquando o cookie do lado do cliente, por isso ele é encriptado.
